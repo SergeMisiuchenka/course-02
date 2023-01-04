@@ -92,13 +92,15 @@ namespace Lesson1
 
         static void Main()
         {
-            Adress adress = new Adress();
-            adress.Index = "220101";
-            adress.Country = "Belarus";
-            adress.City = "Minsk";
-            adress.Street = "Plehanova";
-            adress.House = "93";
-            adress.Apartment = "51";
+            Adress adress = new Adress
+            {
+                Index = "220101",
+                Country = "Belarus",
+                City = "Minsk",
+                Street = "Plehanova",
+                House = "93",
+                Apartment = "51"
+            };
 
             Console.WriteLine("Адрес проживания: " + adress.Country + " " + adress.City + " " + adress.Street + " " + adress.House + " " + adress.Apartment + " " + adress.Index);
 
